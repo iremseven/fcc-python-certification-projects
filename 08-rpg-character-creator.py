@@ -26,9 +26,9 @@ def create_character(name, strength, intelligence, charisma):
     if sum(stats) != 7:
         return 'The character should start with 7 points'
 
-    str_bar = 'STR' + '●' * strength + '○' * (10 - strength)
-    int_bar = 'INT' + '●' * intelligence + '○' * (10 - intelligence)
-    cha_bar = 'CHA' + '●' * charisma + '○' * (10 - charisma)
+    str_bar = 'STR ' + '●' * strength + '○' * (10 - strength)
+    int_bar = 'INT ' + '●' * intelligence + '○' * (10 - intelligence)
+    cha_bar = 'CHA ' + '●' * charisma + '○' * (10 - charisma)
     return f'{name}\n{str_bar}\n{int_bar}\n{cha_bar}'
 
 print(create_character('ren', 4, 2, 1))
